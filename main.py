@@ -236,6 +236,8 @@ for i in range(5):
         draw_points(hangman, points)
         cv2.imshow("Hangman", hangman)
         show_answer(hangman)
+    else:
+        show_answer(hangman)
     end_key = cv2.waitKeyEx()
     if end_key == 0x1B:
         break
